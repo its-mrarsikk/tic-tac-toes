@@ -1,4 +1,4 @@
-import logo from '../rc/ttt.webp';
+const logo = '../rc/ttt.webp';
 import React from 'react';
 
 interface MenuProps {
@@ -7,10 +7,12 @@ interface MenuProps {
 
 function Menu(props: MenuProps) {
     return <>
-        <div className="bg-slate-900 h-screen">
-            <header className="flex flex-row justify-center">
-                <div className="mt-6"> {/* The separate div is meant for keeping the background color while applying the margin */}
+        <div className="bg-slate-900 h-screen w-screen">
+            <header className="flex flex-col justify-center">
+                <div className="mt-6 flex-row self-center"> {/* The separate div is meant for keeping the background color while applying the margin */}
                     <img alt="Tic-Tac-Toes" src={logo} />
+                </div>
+                <div className="flex flex-row scale-75 justify-center">
                     {props.runningBar}
                 </div>
             </header>
