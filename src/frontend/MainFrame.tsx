@@ -1,9 +1,9 @@
 import React from 'react';
-import slideshow from '../rc/slideshow';
+import slideshow from './slideshow';
 import Menu from './Menu';
 
 function MainFrame() {
-  return <Menu runningBar={slideshow.map((src) => <img alt="" src={src} />)} />;
+  return <Menu />;
 }
 
 export default MainFrame;
